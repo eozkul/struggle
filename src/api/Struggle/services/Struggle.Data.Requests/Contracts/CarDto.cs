@@ -7,5 +7,6 @@ namespace Struggle.Data.Requests.Contracts
         public Color Color { get; set; }
         public string Name { get; set; }
         public bool HeadLights { get; set; }    
+        public Wheel Wheel { get; set; }
     }
 }

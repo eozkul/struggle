@@ -32,7 +32,8 @@ namespace Struggle.Api.Controllers
             }
             return BadRequest(result);
         }
-        [HttpPut("update")]
+        //HttpPut ile de yapılabilirdi.
+        [HttpPost("update")]
         public async Task<IActionResult> UpdateCar([FromBody] UpdateCarDto data, CancellationToken cancellationToken)
         {
             var result = await service.UpdateCar(data, cancellationToken);

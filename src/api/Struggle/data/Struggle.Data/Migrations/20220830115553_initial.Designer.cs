@@ -12,7 +12,7 @@ using Struggle.Data.Context;
 namespace Struggle.Data.Migrations
 {
     [DbContext(typeof(StruggleDbContext))]
-    [Migration("20220830104754_initial")]
+    [Migration("20220830115553_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,6 +81,9 @@ namespace Struggle.Data.Migrations
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Wheel")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

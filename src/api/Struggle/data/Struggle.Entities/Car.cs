@@ -7,6 +7,7 @@ namespace Struggle.Entities
     public class Car:EntityBase
     {
         [Required]
-        public bool HeadLights { get; set; }    
+        public bool HeadLights { get; set; }   
+        public Wheel Wheel { get; set; }
     }
 }
