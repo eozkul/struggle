@@ -1,0 +1,3 @@
+Add-Migration initial -P Struggle.Data -C StruggleDbContext -S Struggle.Api
+--------------
+Update-Database -P Struggle.Data -Context StruggleDbContext -S Struggle.Api
